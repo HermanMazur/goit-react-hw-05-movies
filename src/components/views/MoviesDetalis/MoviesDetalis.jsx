@@ -23,6 +23,7 @@ export default function MoviesDetalis() {
   useEffect(() => {
     MovieDetalisFetch(movieId).then(setMovieInfo);
   }, [movieId]);
+  
   const { genres, overview, title, vote_average, release_date, poster_path } =
     movieInfo;
   
