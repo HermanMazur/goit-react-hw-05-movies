@@ -14,9 +14,9 @@ const Movies = lazy(()=>import('./views/Movies/Movies.jsx'))
 export const App = () => {
   return (
     <>
-       <Suspense fallback={''}>
+      <Suspense fallback={''}>
       <Navigation />
-     
+          
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="movies" element={<Movies />} />
@@ -26,6 +26,7 @@ export const App = () => {
           </Route>
           <Route path="*" element={<NotFoundView />} />
         </Routes>
+        
       </Suspense>
     </>
   );
