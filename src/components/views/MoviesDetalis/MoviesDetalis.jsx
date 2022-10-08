@@ -9,6 +9,9 @@ import {
 import { useEffect, useState } from 'react';
 import css from './MoviesDetalis.module.css';
 
+  // useParams возвращает {:-//-} для дИнамических параметоров
+
+
 export default function MoviesDetalis() {
   const [movieInfo, setMovieInfo] = useState([]);
   const { movieId } = useParams();
@@ -22,6 +25,7 @@ export default function MoviesDetalis() {
   }, [movieId]);
   const { genres, overview, title, vote_average, release_date, poster_path } =
     movieInfo;
+  
   return (
     <div className={css.container}>
       <button
