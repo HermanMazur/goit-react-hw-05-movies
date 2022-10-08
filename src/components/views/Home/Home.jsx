@@ -9,7 +9,8 @@ export default function Home() {
 
   useEffect(() => {
     TrendMoviesFetch().then(setMovies);
-  }, []);
+  }, []); 
+  // <= the last operation until amounting
 
   return (
     <div className={css.container}>
@@ -18,7 +19,7 @@ export default function Home() {
         {movies.map(({ id, title }) => {
           return (
             <li key={id}>
-              <Link state={{ from: location.pathname }} to={`movies/${id}`}>
+              <Link to={`movies/${id}`} state={{ from: location.pathname }} >
                 {' '}
                 {title}
               </Link>
