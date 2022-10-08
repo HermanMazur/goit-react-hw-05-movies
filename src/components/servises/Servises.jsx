@@ -3,8 +3,8 @@ import axios from "axios";
 
 
 export async function TrendMoviesFetch (){
- const response =  await axios.get('https://api.themoviedb.org/3/trending/movie/day?api_key=125725f49ad2ae69609a1a5a9c4211d9')  
-   
+const response =  await axios.get('https://api.themoviedb.org/3/trending/movie/day?api_key=125725f49ad2ae69609a1a5a9c4211d9')  
+
     return response.data.results;
 }
 
