@@ -10,7 +10,7 @@ const MoviesDetalis = lazy(() =>
   import('./views/MoviesDetalis/MoviesDetalis.jsx')
 );
 const Home = lazy(() => import('./views/Home/Home.jsx'));
-const Movies = lazy(()=>import('./views/Movies/Movies.jsx'))
+const Movies = lazy(() => import('./views/Movies/Movies.jsx'))
 export const App = () => {
   return (
     <>
@@ -26,7 +26,7 @@ export const App = () => {
           </Route>
           <Route path="*" element={<NotFoundView />} />
         </Routes>
-        
+
       </Suspense>
     </>
   );
