@@ -5,7 +5,9 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import css from './Movies.module.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 export default function Movies() {
+  
   const location = useLocation();
   const [name, setName] = useState('');
   const [movies, setMovies] = useState([]);
@@ -32,7 +34,7 @@ export default function Movies() {
     if (query) {
       SearchMoviesFetch(query).then(setMovies)
 
-   } 
+  } 
   }, [query]);
 
 
@@ -40,7 +42,7 @@ export default function Movies() {
 
   return (
     <>
-       <ToastContainer autoClose={3000} />
+      <ToastContainer autoClose={3000} />
       <form className={css.container} onSubmit={handelSubmit}>
         <input
           className={css.input}
@@ -64,7 +66,7 @@ export default function Movies() {
               </Link>
             </li>
         ))}
-       
+
       </ul>
     </>
   );

@@ -1,9 +1,8 @@
-.container{
- 
+.container {
     padding: 20px;
-    background-color: aqua;
-   
+    background-color: rgb(78, 51, 158);
 }
+
 .input{
     padding: 10px;
     margin-right: 10px;
