@@ -30,10 +30,10 @@ export default function Movies() {
 
     event.target.reset();
   };
+
   useEffect(() => {
     if (query) {
       SearchMoviesFetch(query).then(setMovies)
-
   } 
   }, [query]);
 
