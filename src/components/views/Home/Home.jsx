@@ -9,8 +9,8 @@ export default function Home() {
 
   useEffect(() => {
     TrendMoviesFetch().then(setMovies);
-  }, []); 
-  // <= the last operation until amounting
+  }, []);  // <= the last operation until amounting
+
 
   return (
     <div className={css.container}>
