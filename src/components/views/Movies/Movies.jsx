@@ -7,7 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Movies() {
-  
+
   const location = useLocation();
   const [name, setName] = useState('');
   const [movies, setMovies] = useState([]);
@@ -36,9 +36,6 @@ export default function Movies() {
 
   } 
   }, [query]);
-
-
-
 
   return (
     <>
