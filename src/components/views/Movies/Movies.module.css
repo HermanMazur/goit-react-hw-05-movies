@@ -1,11 +1,14 @@
 .container {
     padding: 20px;
-    background-color: rgb(78, 51, 158);
+    background-color: rgb(74, 58, 120);
+    box-shadow: 0 0 10px #799be6 inset,
+            0 0 10px 4px #799be6;
 }
 
 .input {
     padding: 10px;
     margin-right: 10px;
+    
 }
 .button {
     padding: 10px;
