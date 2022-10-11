@@ -68,10 +68,11 @@ export default function MoviesDetalis() {
       <div>
         <ul>
           <li>
-            <Link to="cast" state= {{from: location?.state?.from ?? '/'}}>Cast</Link>
+            <Link to="cast" state= {{from: location.state?.from ?? '/'}}>Cast</Link>
           </li>
+          {/* location.state?.from ?? '/' - если нет есть локейшен то валим в /*/}
           <li>
-            <Link to="reviews" state= {{from: location?.state?.from ?? '/'}}>Reviews</Link>
+            <Link to="reviews" state= {{from: location.state?.from ?? '/'}}>Reviews</Link>
           </li>
         </ul>
       </div>
