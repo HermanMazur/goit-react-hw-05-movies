@@ -10,7 +10,8 @@ const MoviesDetalis = lazy(() =>
   import('./views/MoviesDetalis/MoviesDetalis.jsx')
 );
 const Home = lazy(() => import('./views/Home/Home.jsx'));
-const Movies = lazy(() => import('./views/Movies/Movies.jsx'))
+const Movies = lazy(() => import('./views/Movies/Movies.jsx'))   // функция loader которая возвращает промис 
+
 export const App = () => {
   return (
     <>
