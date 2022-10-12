@@ -30,7 +30,7 @@ export default function MoviesDetalis() {
     <div className={css.container}>
       <button
         className={css.button}
-        onClick={() => navigate(location?.state?.from ?? '/movies')}
+        onClick={() => navigate(location.state?.from ?? '/')}
       >
         Go back
       </button>
@@ -69,11 +69,11 @@ export default function MoviesDetalis() {
       <div>
         <ul>
           <li>
-            <Link to="cast" state= {{from: location?.state?.from ?? '/'}}>Cast</Link>
+            <Link to="cast" state= {{from: location.state?.from ?? '/'}}>Cast</Link>
           </li>
       
           <li>
-            <Link to="reviews" state= {{from: location?.state?.from ?? '/'}}>Reviews</Link>
+            <Link to="reviews" state= {{from: location.state?.from ?? '/'}}>Reviews</Link>
           </li>
         </ul>
       </div>
