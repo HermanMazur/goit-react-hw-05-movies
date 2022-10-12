@@ -27,8 +27,6 @@ export default function MoviesDetalis() {
     return null;
   }
 
-
-  
   const { genres, overview, title, vote_average, release_date, poster_path } =
     movieInfo;
   
