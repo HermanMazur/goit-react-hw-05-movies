@@ -12,7 +12,7 @@ import css from './MoviesDetalis.module.css';
   // useParams возвращает {:-//-} для дИнамических параметоров
 
 export default function MoviesDetalis() {
-  const [movieInfo, setMovieInfo] = useState([]);
+  const [movieInfo, setMovieInfo] = useState(null);
   const { movieId } = useParams();
   const location = useLocation();
   console.log(location)
