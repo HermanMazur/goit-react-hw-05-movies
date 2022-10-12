@@ -15,8 +15,7 @@ export default function MoviesDetalis() {
   const [movieInfo, setMovieInfo] = useState(null);
   const { movieId } = useParams();
   const location = useLocation();
-  console.log(location)
-  console.log(location.state.from)
+
   const navigate = useNavigate();
 
   useEffect(() => {
