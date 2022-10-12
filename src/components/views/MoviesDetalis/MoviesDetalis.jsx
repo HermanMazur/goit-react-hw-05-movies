@@ -30,7 +30,7 @@ export default function MoviesDetalis() {
     <div className={css.container}>
       <button
         className={css.button}
-        onClick={() => navigate(location?.state?.from ?? '/')}
+        onClick={() => navigate(location.state?.from ?? '/')}
       >
         Go back
       </button>

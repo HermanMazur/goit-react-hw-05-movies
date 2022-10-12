@@ -26,7 +26,7 @@ export default function Movies() {
       return;
     } 
 
-    setSearchParams({ query: name });
+    setSearchParams(query !== '' ? { query: name } : {});
 
     event.target.reset();
   };
