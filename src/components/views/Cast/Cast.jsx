@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import css from './Cast.module.css';
 
+const DEFAULT_FOTO = 'https://vyshnevyi-partners.com/wp-content/uploads/2016/12/no-avatar-300x300.png';
+
 export const Cast = () => {
   const [casts, setCast] = useState([]);
   const { movieId } = useParams();
@@ -21,8 +23,15 @@ export const Cast = () => {
                 alt={name}
               />
             ) : (
-              'There is no photo'
-            )}
+            <img
+                  src={DEFAULT_FOTO}
+                  alt={''}
+                  width={150}
+                  height={225}
+                  
+            />
+                )
+            }
 
             <h3>{name}</h3>
             <p>Character: {character}</p>
