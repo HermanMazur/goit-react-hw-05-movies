@@ -22,6 +22,12 @@ export default function MoviesDetalis() {
   useEffect(() => {
     MovieDetalisFetch(movieId).then(setMovieInfo);
   }, [movieId]);
+
+  if (!movieInfo) {
+    return null;
+  }
+
+
   
   const { genres, overview, title, vote_average, release_date, poster_path } =
     movieInfo;
@@ -30,10 +36,17 @@ export default function MoviesDetalis() {
     <div className={css.container}>
       <button
         className={css.button}
-        onClick={() => navigate(location.state?.from ?? '/')}
+        onClick={() => navigate(location.state?.from || '/')}
       >
         Go back
       </button>
+      {/* <Link
+        className={css.button}
+        to={location.state?.from ?? '/Home'}
+      >
+        Go back
+      </Link> */}
+      
       <div className={css.card}>
         <img
           width={200}
@@ -64,16 +77,18 @@ export default function MoviesDetalis() {
           )}
         </div>
       </div>
+            
 
       <hr />
       <div>
         <ul>
           <li>
-            <Link to="cast" state= {{from: location.state?.from ?? '/'}}>Cast</Link>
+            <Link to="cast" state={{ from: location.state?.from || '/' }}>Cast</Link>
           </li>
+        
       
           <li>
-            <Link to="reviews" state= {{from: location.state?.from ?? '/'}}>Reviews</Link>
+            <Link to="reviews" state= {{from: location.state?.from || '/'}}>Reviews</Link>
           </li>
         </ul>
       </div>

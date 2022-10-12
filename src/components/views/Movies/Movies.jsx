@@ -60,9 +60,12 @@ export default function Movies() {
             <li key={id}>
               <Link to={`/movies/${id}`} state={{ from: location }}>
                 {title}
-              </Link>
-            </li>
+            </Link>
+            
+          </li>
+          
         ))}
+
 
       </ul>
     </>
