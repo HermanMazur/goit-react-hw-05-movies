@@ -64,6 +64,7 @@ export default function MoviesDetalis() {
           )}
         </div>
       </div>
+
       <hr />
       <div>
         <ul>

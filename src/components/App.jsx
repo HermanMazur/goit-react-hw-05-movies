@@ -17,7 +17,7 @@ export const App = () => {
     <>
       <Suspense fallback={''}>
       <Navigation />
-          
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="movies" element={<Movies />} />
